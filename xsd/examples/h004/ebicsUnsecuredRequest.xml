@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ebicsUnsecuredRequest xmlns="urn:org:ebics:H004" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:org:ebics:H004 ebics_ keymgmt_request_H004.xsd" Version="H004" Revision="1">
+  <header authenticate="true">
+    <static>
+      <HostID>EBIXHOST</HostID>
+      <PartnerID>KUNDE001</PartnerID>
+      <UserID>TLN100</UserID>
+      <OrderDetails>
+        <OrderType>INI</OrderType>
+        <OrderAttribute>DZNNN</OrderAttribute>
+      </OrderDetails>
+      <SecurityMedium>0200</SecurityMedium>
+    </static>
+    <mutable/>
+  </header>
+  <body>
+    <DataTransfer>
+      <!--INI-Datei gemäß Kapitel 14.2.5.4, komprimiert und base64-kodiert-->
+      <OrderData>AQAB</OrderData>
+    </DataTransfer>
+  </body>
+</ebicsUnsecuredRequest>

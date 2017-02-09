@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ebicsUnsignedRequest xmlns="urn:org:ebics:H004" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:org:ebics:H004 ebics_keymgmt_request_H004.xsd" Version="H004" Revision="1">
+  <header authenticate="true">
+    <static>
+      <HostID>EBIXHOST</HostID>
+      <PartnerID>KUNDE001</PartnerID>
+      <UserID>TLN100</UserID>
+      <OrderDetails>
+        <OrderType>HSA</OrderType>
+        <OrderAttribute>OZNNN</OrderAttribute>
+      </OrderDetails>
+      <SecurityMedium>0000</SecurityMedium>
+    </static>
+    <mutable/>
+  </header>
+  <body>
+    <DataTransfer>
+      <!--Zu ebics_orders_H004.xsd konformaes (XML-)Instanzdokument mit Wurzelelement
+    UserSignatureData, kompimiert und base64-kodiert-->
+      <SignatureData authenticate="true">AQAB</SignatureData>
+      <!--Zu ebics_orders.xsd konformes (XML-)Instanzdokument mit Wurzelelement
+    HSARequestOrderData, komprimiert und base64-kodiert-->
+      <OrderData>AQAB</OrderData>
+    </DataTransfer>
+  </body>
+</ebicsUnsignedRequest>
