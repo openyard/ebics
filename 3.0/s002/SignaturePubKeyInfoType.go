@@ -1,4 +1,4 @@
-// Generated with goxc v0.1.3 - rev 0e63342ac0a4d5f52582ea0065a462e700069839
+// Generated with goxc v0.1.7 - rev 2ae97d253f5eaa17bab360dad75945920dfceef4
 package s002
 
 // complex type
