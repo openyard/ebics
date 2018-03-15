@@ -10,17 +10,17 @@ import (
 func ExampleUnmarshalEbicsUnsignedRequest() {
 	var req h004.EbicsUnsignedRequest
 	xml.Unmarshal(unsignedRequest(), &req)
-	fmt.Println(fmt.Sprintf("Version        :%10s", req.Version))
-	fmt.Println(fmt.Sprintf("Revision       :%10d", req.Revision))
-	fmt.Println(fmt.Sprintf("HostID         :%10s", req.Header.Static.HostID))
-	fmt.Println(fmt.Sprintf("PartnerID      :%10s", req.Header.Static.PartnerID))
-	fmt.Println(fmt.Sprintf("UserID         :%10s", req.Header.Static.UserID))
-	fmt.Println(fmt.Sprintf("OrderType      :%10s", req.Header.Static.OrderDetails.OrderType))
-	fmt.Println(fmt.Sprintf("OrderAttribute :%10s", req.Header.Static.OrderDetails.OrderAttribute))
-	fmt.Println(fmt.Sprintf("SecurityMedium :%10s", req.Header.Static.SecurityMedium))
-	fmt.Println(fmt.Sprintf("authenticate   :%10t", req.Body.DataTransfer.SignatureData.Authenticate))
-	fmt.Println(fmt.Sprintf("SignatureData  :%10s", req.Body.DataTransfer.SignatureData.Value))
-	fmt.Println(fmt.Sprintf("OrderData      :%10s", req.Body.DataTransfer.OrderData.Value))
+	fmt.Println(fmt.Sprintf("Version        :%10s", *req.Version))
+	fmt.Println(fmt.Sprintf("Revision       :%10d", *req.Revision))
+	fmt.Println(fmt.Sprintf("HostID         :%10s", *req.Header.Static.HostID))
+	fmt.Println(fmt.Sprintf("PartnerID      :%10s", *req.Header.Static.PartnerID))
+	fmt.Println(fmt.Sprintf("UserID         :%10s", *req.Header.Static.UserID))
+	fmt.Println(fmt.Sprintf("OrderType      :%10s", *req.Header.Static.OrderDetails.OrderType))
+	fmt.Println(fmt.Sprintf("OrderAttribute :%10s", *req.Header.Static.OrderDetails.OrderAttribute))
+	fmt.Println(fmt.Sprintf("SecurityMedium :%10s", *req.Header.Static.SecurityMedium))
+	fmt.Println(fmt.Sprintf("authenticate   :%10t", *req.Body.DataTransfer.SignatureData.Authenticate))
+	fmt.Println(fmt.Sprintf("SignatureData  :%10s", *req.Body.DataTransfer.SignatureData.Value))
+	fmt.Println(fmt.Sprintf("OrderData      :%10s", *req.Body.DataTransfer.OrderData.Value))
 	// Output:
 	//Version        :      H004
 	//Revision       :         1

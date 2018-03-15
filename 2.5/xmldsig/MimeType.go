@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.8 - rev 7e2e945f706bc13e7539c26efd1ec70bc280277e
+// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
 package xmldsig
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
 // attribute type
 type MimeType struct {
-	Value w3c.String `xml:"MimeType,attr"`
+	Value *w3c.String `xml:"MimeType,attr"`
 }

@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.8 - rev 7e2e945f706bc13e7539c26efd1ec70bc280277e
+// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
 package h005
 
 import ds "github.com/openyard/ebics/3.0/xmldsig"
 
 // complex type
 type EbicsNoPubKeyDigestsRequestBody struct {
-	X509Data ds.X509Data `xml:"http://www.w3.org/2000/09/xmldsig# X509Data,omitempty"`
+	X509Data *ds.X509Data `xml:"http://www.w3.org/2000/09/xmldsig# X509Data,omitempty"`
 }
