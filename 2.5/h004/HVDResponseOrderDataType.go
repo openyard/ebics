@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
@@ -24,24 +24,54 @@ func (me *HVDResponseOrderDataType) SetDataDigest(value *DataDigestType) {
 	me.DataDigest = value
 }
 
+func (me *HVDResponseOrderDataType) AddDataDigest() *DataDigestType {
+	me.DataDigest = new(DataDigestType)
+	return me.DataDigest
+}
+
 func (me *HVDResponseOrderDataType) SetDisplayFile(value *w3c.Base64Binary) {
 	me.DisplayFile = value
+}
+
+func (me *HVDResponseOrderDataType) AddDisplayFile() *w3c.Base64Binary {
+	me.DisplayFile = new(w3c.Base64Binary)
+	return me.DisplayFile
 }
 
 func (me *HVDResponseOrderDataType) SetOrderDataAvailable(value *w3c.Boolean) {
 	me.OrderDataAvailable = value
 }
 
+func (me *HVDResponseOrderDataType) AddOrderDataAvailable() *w3c.Boolean {
+	me.OrderDataAvailable = new(w3c.Boolean)
+	return me.OrderDataAvailable
+}
+
 func (me *HVDResponseOrderDataType) SetOrderDataSize(value *w3c.PositiveInteger) {
 	me.OrderDataSize = value
+}
+
+func (me *HVDResponseOrderDataType) AddOrderDataSize() *w3c.PositiveInteger {
+	me.OrderDataSize = new(w3c.PositiveInteger)
+	return me.OrderDataSize
 }
 
 func (me *HVDResponseOrderDataType) SetOrderDetailsAvailable(value *w3c.Boolean) {
 	me.OrderDetailsAvailable = value
 }
 
+func (me *HVDResponseOrderDataType) AddOrderDetailsAvailable() *w3c.Boolean {
+	me.OrderDetailsAvailable = new(w3c.Boolean)
+	return me.OrderDetailsAvailable
+}
+
 func (me *HVDResponseOrderDataType) SetBankSignature(value *SignatureType) {
 	me.BankSignature = value
+}
+
+func (me *HVDResponseOrderDataType) AddBankSignature() *SignatureType {
+	me.BankSignature = new(SignatureType)
+	return me.BankSignature
 }
 
 func (me *HVDResponseOrderDataType) AddSignerInfo(value *SignerInfoType) {

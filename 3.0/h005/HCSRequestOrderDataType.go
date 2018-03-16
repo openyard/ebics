@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import esig "github.com/openyard/ebics/3.0/s002"
@@ -23,16 +23,36 @@ func (me *HCSRequestOrderDataType) SetAuthenticationPubKeyInfo(value *Authentica
 	me.AuthenticationPubKeyInfo = value
 }
 
+func (me *HCSRequestOrderDataType) AddAuthenticationPubKeyInfo() *AuthenticationPubKeyInfoType {
+	me.AuthenticationPubKeyInfo = new(AuthenticationPubKeyInfoType)
+	return me.AuthenticationPubKeyInfo
+}
+
 func (me *HCSRequestOrderDataType) SetEncryptionPubKeyInfo(value *EncryptionPubKeyInfoType) {
 	me.EncryptionPubKeyInfo = value
+}
+
+func (me *HCSRequestOrderDataType) AddEncryptionPubKeyInfo() *EncryptionPubKeyInfoType {
+	me.EncryptionPubKeyInfo = new(EncryptionPubKeyInfoType)
+	return me.EncryptionPubKeyInfo
 }
 
 func (me *HCSRequestOrderDataType) SetPartnerID(value *PartnerIDType) {
 	me.PartnerID = value
 }
 
+func (me *HCSRequestOrderDataType) AddPartnerID() *PartnerIDType {
+	me.PartnerID = new(PartnerIDType)
+	return me.PartnerID
+}
+
 func (me *HCSRequestOrderDataType) SetUserID(value *UserIDType) {
 	me.UserID = value
+}
+
+func (me *HCSRequestOrderDataType) AddUserID() *UserIDType {
+	me.UserID = new(UserIDType)
+	return me.UserID
 }
 
 func (me *HCSRequestOrderDataType) SetSignaturePubKeyInfo(value *esig.SignaturePubKeyInfo) {

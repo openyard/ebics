@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
@@ -22,18 +22,43 @@ func (me *HPDProtocolParamsType) SetVersion(value *HPDVersionType) {
 	me.Version = value
 }
 
+func (me *HPDProtocolParamsType) AddVersion() *HPDVersionType {
+	me.Version = new(HPDVersionType)
+	return me.Version
+}
+
 func (me *HPDProtocolParamsType) SetRecovery(value *HPDProtocolParamsTypeRecovery) {
 	me.Recovery = value
+}
+
+func (me *HPDProtocolParamsType) AddRecovery() *HPDProtocolParamsTypeRecovery {
+	me.Recovery = new(HPDProtocolParamsTypeRecovery)
+	return me.Recovery
 }
 
 func (me *HPDProtocolParamsType) SetPreValidation(value *HPDProtocolParamsTypePreValidation) {
 	me.PreValidation = value
 }
 
+func (me *HPDProtocolParamsType) AddPreValidation() *HPDProtocolParamsTypePreValidation {
+	me.PreValidation = new(HPDProtocolParamsTypePreValidation)
+	return me.PreValidation
+}
+
 func (me *HPDProtocolParamsType) SetClientDataDownload(value *HPDProtocolParamsTypeClientDataDownload) {
 	me.ClientDataDownload = value
 }
 
+func (me *HPDProtocolParamsType) AddClientDataDownload() *HPDProtocolParamsTypeClientDataDownload {
+	me.ClientDataDownload = new(HPDProtocolParamsTypeClientDataDownload)
+	return me.ClientDataDownload
+}
+
 func (me *HPDProtocolParamsType) SetDownloadableOrderData(value *HPDProtocolParamsTypeDownloadableOrderData) {
 	me.DownloadableOrderData = value
+}
+
+func (me *HPDProtocolParamsType) AddDownloadableOrderData() *HPDProtocolParamsTypeDownloadableOrderData {
+	me.DownloadableOrderData = new(HPDProtocolParamsTypeDownloadableOrderData)
+	return me.DownloadableOrderData
 }

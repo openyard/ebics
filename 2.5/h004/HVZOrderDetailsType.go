@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
@@ -27,32 +27,72 @@ func (me *HVZOrderDetailsType) SetOrderType(value *OrderTBaseType) {
 	me.OrderType = value
 }
 
+func (me *HVZOrderDetailsType) AddOrderType() *OrderTBaseType {
+	me.OrderType = new(OrderTBaseType)
+	return me.OrderType
+}
+
 func (me *HVZOrderDetailsType) SetFileFormat(value *FileFormatType) {
 	me.FileFormat = value
+}
+
+func (me *HVZOrderDetailsType) AddFileFormat() *FileFormatType {
+	me.FileFormat = new(FileFormatType)
+	return me.FileFormat
 }
 
 func (me *HVZOrderDetailsType) SetOrderID(value *OrderIDType) {
 	me.OrderID = value
 }
 
+func (me *HVZOrderDetailsType) AddOrderID() *OrderIDType {
+	me.OrderID = new(OrderIDType)
+	return me.OrderID
+}
+
 func (me *HVZOrderDetailsType) SetDataDigest(value *DataDigestType) {
 	me.DataDigest = value
+}
+
+func (me *HVZOrderDetailsType) AddDataDigest() *DataDigestType {
+	me.DataDigest = new(DataDigestType)
+	return me.DataDigest
 }
 
 func (me *HVZOrderDetailsType) SetOrderDataAvailable(value *w3c.Boolean) {
 	me.OrderDataAvailable = value
 }
 
+func (me *HVZOrderDetailsType) AddOrderDataAvailable() *w3c.Boolean {
+	me.OrderDataAvailable = new(w3c.Boolean)
+	return me.OrderDataAvailable
+}
+
 func (me *HVZOrderDetailsType) SetOrderDataSize(value *w3c.PositiveInteger) {
 	me.OrderDataSize = value
+}
+
+func (me *HVZOrderDetailsType) AddOrderDataSize() *w3c.PositiveInteger {
+	me.OrderDataSize = new(w3c.PositiveInteger)
+	return me.OrderDataSize
 }
 
 func (me *HVZOrderDetailsType) SetOrderDetailsAvailable(value *w3c.Boolean) {
 	me.OrderDetailsAvailable = value
 }
 
+func (me *HVZOrderDetailsType) AddOrderDetailsAvailable() *w3c.Boolean {
+	me.OrderDetailsAvailable = new(w3c.Boolean)
+	return me.OrderDetailsAvailable
+}
+
 func (me *HVZOrderDetailsType) SetSigningInfo(value *HVUSigningInfoType) {
 	me.SigningInfo = value
+}
+
+func (me *HVZOrderDetailsType) AddSigningInfo() *HVUSigningInfoType {
+	me.SigningInfo = new(HVUSigningInfoType)
+	return me.SigningInfo
 }
 
 func (me *HVZOrderDetailsType) AddSignerInfo(value *SignerInfoType) {
@@ -61,4 +101,9 @@ func (me *HVZOrderDetailsType) AddSignerInfo(value *SignerInfoType) {
 
 func (me *HVZOrderDetailsType) SetOriginatorInfo(value *HVUOriginatorInfoType) {
 	me.OriginatorInfo = value
+}
+
+func (me *HVZOrderDetailsType) AddOriginatorInfo() *HVUOriginatorInfoType {
+	me.OriginatorInfo = new(HVUOriginatorInfoType)
+	return me.OriginatorInfo
 }

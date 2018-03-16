@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package s001
 
 import ds "github.com/openyard/ebics/2.5/xmldsig"
@@ -18,6 +18,11 @@ func NewPubKeyValueType() *PubKeyValueType {
 
 func (me *PubKeyValueType) SetTimeStamp(value *TimestampType) {
 	me.TimeStamp = value
+}
+
+func (me *PubKeyValueType) AddTimeStamp() *TimestampType {
+	me.TimeStamp = new(TimestampType)
+	return me.TimeStamp
 }
 
 func (me *PubKeyValueType) SetRSAKeyValue(value *ds.RSAKeyValue) {

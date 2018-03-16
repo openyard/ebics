@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 // ComplexType
@@ -18,18 +18,43 @@ func (me *ServiceType) SetServiceName(value *ServiceNameStringType) {
 	me.ServiceName = value
 }
 
+func (me *ServiceType) AddServiceName() *ServiceNameStringType {
+	me.ServiceName = new(ServiceNameStringType)
+	return me.ServiceName
+}
+
 func (me *ServiceType) SetScope(value *ScopeStringType) {
 	me.Scope = value
+}
+
+func (me *ServiceType) AddScope() *ScopeStringType {
+	me.Scope = new(ScopeStringType)
+	return me.Scope
 }
 
 func (me *ServiceType) SetServiceOption(value *ServiceOptionStringType) {
 	me.ServiceOption = value
 }
 
+func (me *ServiceType) AddServiceOption() *ServiceOptionStringType {
+	me.ServiceOption = new(ServiceOptionStringType)
+	return me.ServiceOption
+}
+
 func (me *ServiceType) SetContainer(value *ContainerFlagType) {
 	me.Container = value
 }
 
+func (me *ServiceType) AddContainer() *ContainerFlagType {
+	me.Container = new(ContainerFlagType)
+	return me.Container
+}
+
 func (me *ServiceType) SetMsgName(value *MessageType) {
 	me.MsgName = value
+}
+
+func (me *ServiceType) AddMsgName() *MessageType {
+	me.MsgName = new(MessageType)
+	return me.MsgName
 }

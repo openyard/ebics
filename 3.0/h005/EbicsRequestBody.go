@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import ds "github.com/openyard/ebics/3.0/xmldsig"
@@ -19,12 +19,27 @@ func (me *EbicsRequestBody) SetPreValidation(value *EbicsRequestBodyPreValidatio
 	me.PreValidation = value
 }
 
+func (me *EbicsRequestBody) AddPreValidation() *EbicsRequestBodyPreValidation {
+	me.PreValidation = new(EbicsRequestBodyPreValidation)
+	return me.PreValidation
+}
+
 func (me *EbicsRequestBody) SetDataTransfer(value *DataTransferRequestType) {
 	me.DataTransfer = value
 }
 
+func (me *EbicsRequestBody) AddDataTransfer() *DataTransferRequestType {
+	me.DataTransfer = new(DataTransferRequestType)
+	return me.DataTransfer
+}
+
 func (me *EbicsRequestBody) SetTransferReceipt(value *EbicsRequestBodyTransferReceipt) {
 	me.TransferReceipt = value
+}
+
+func (me *EbicsRequestBody) AddTransferReceipt() *EbicsRequestBodyTransferReceipt {
+	me.TransferReceipt = new(EbicsRequestBodyTransferReceipt)
+	return me.TransferReceipt
 }
 
 func (me *EbicsRequestBody) SetX509Data(value *ds.X509Data) {

@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
@@ -21,14 +21,34 @@ func (me *HVUOriginatorInfoType) SetPartnerID(value *PartnerIDType) {
 	me.PartnerID = value
 }
 
+func (me *HVUOriginatorInfoType) AddPartnerID() *PartnerIDType {
+	me.PartnerID = new(PartnerIDType)
+	return me.PartnerID
+}
+
 func (me *HVUOriginatorInfoType) SetUserID(value *UserIDType) {
 	me.UserID = value
+}
+
+func (me *HVUOriginatorInfoType) AddUserID() *UserIDType {
+	me.UserID = new(UserIDType)
+	return me.UserID
 }
 
 func (me *HVUOriginatorInfoType) SetName(value *NameType) {
 	me.Name = value
 }
 
+func (me *HVUOriginatorInfoType) AddName() *NameType {
+	me.Name = new(NameType)
+	return me.Name
+}
+
 func (me *HVUOriginatorInfoType) SetTimestamp(value *TimestampType) {
 	me.Timestamp = value
+}
+
+func (me *HVUOriginatorInfoType) AddTimestamp() *TimestampType {
+	me.Timestamp = new(TimestampType)
+	return me.Timestamp
 }

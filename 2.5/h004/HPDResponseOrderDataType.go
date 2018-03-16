@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 // ComplexType
@@ -15,6 +15,16 @@ func (me *HPDResponseOrderDataType) SetAccessParams(value *HPDAccessParamsType) 
 	me.AccessParams = value
 }
 
+func (me *HPDResponseOrderDataType) AddAccessParams() *HPDAccessParamsType {
+	me.AccessParams = new(HPDAccessParamsType)
+	return me.AccessParams
+}
+
 func (me *HPDResponseOrderDataType) SetProtocolParams(value *HPDProtocolParamsType) {
 	me.ProtocolParams = value
+}
+
+func (me *HPDResponseOrderDataType) AddProtocolParams() *HPDProtocolParamsType {
+	me.ProtocolParams = new(HPDProtocolParamsType)
+	return me.ProtocolParams
 }

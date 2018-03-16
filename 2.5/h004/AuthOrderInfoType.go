@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
@@ -23,22 +23,52 @@ func (me *AuthOrderInfoType) SetOrderType(value *OrderTBaseType) {
 	me.OrderType = value
 }
 
+func (me *AuthOrderInfoType) AddOrderType() *OrderTBaseType {
+	me.OrderType = new(OrderTBaseType)
+	return me.OrderType
+}
+
 func (me *AuthOrderInfoType) SetFileFormat(value *FileFormatType) {
 	me.FileFormat = value
+}
+
+func (me *AuthOrderInfoType) AddFileFormat() *FileFormatType {
+	me.FileFormat = new(FileFormatType)
+	return me.FileFormat
 }
 
 func (me *AuthOrderInfoType) SetTransferType(value *TransferType) {
 	me.TransferType = value
 }
 
+func (me *AuthOrderInfoType) AddTransferType() *TransferType {
+	me.TransferType = new(TransferType)
+	return me.TransferType
+}
+
 func (me *AuthOrderInfoType) SetOrderFormat(value *OrderFormatType) {
 	me.OrderFormat = value
+}
+
+func (me *AuthOrderInfoType) AddOrderFormat() *OrderFormatType {
+	me.OrderFormat = new(OrderFormatType)
+	return me.OrderFormat
 }
 
 func (me *AuthOrderInfoType) SetDescription(value *OrderDescriptionType) {
 	me.Description = value
 }
 
+func (me *AuthOrderInfoType) AddDescription() *OrderDescriptionType {
+	me.Description = new(OrderDescriptionType)
+	return me.Description
+}
+
 func (me *AuthOrderInfoType) SetNumSigRequired(value *w3c.NonNegativeInteger) {
 	me.NumSigRequired = value
+}
+
+func (me *AuthOrderInfoType) AddNumSigRequired() *w3c.NonNegativeInteger {
+	me.NumSigRequired = new(w3c.NonNegativeInteger)
+	return me.NumSigRequired
 }

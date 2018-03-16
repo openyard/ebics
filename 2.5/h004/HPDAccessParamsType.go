@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
@@ -24,6 +24,16 @@ func (me *HPDAccessParamsType) SetInstitute(value *w3c.NormalizedString) {
 	me.Institute = value
 }
 
+func (me *HPDAccessParamsType) AddInstitute() *w3c.NormalizedString {
+	me.Institute = new(w3c.NormalizedString)
+	return me.Institute
+}
+
 func (me *HPDAccessParamsType) SetHostID(value *HostIDType) {
 	me.HostID = value
+}
+
+func (me *HPDAccessParamsType) AddHostID() *HostIDType {
+	me.HostID = new(HostIDType)
+	return me.HostID
 }

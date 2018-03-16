@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 // ComplexType
@@ -16,10 +16,25 @@ func (me *EbicsResponseBody) SetDataTransfer(value *DataTransferResponseType) {
 	me.DataTransfer = value
 }
 
+func (me *EbicsResponseBody) AddDataTransfer() *DataTransferResponseType {
+	me.DataTransfer = new(DataTransferResponseType)
+	return me.DataTransfer
+}
+
 func (me *EbicsResponseBody) SetReturnCode(value *EbicsResponseBodyReturnCode) {
 	me.ReturnCode = value
 }
 
+func (me *EbicsResponseBody) AddReturnCode() *EbicsResponseBodyReturnCode {
+	me.ReturnCode = new(EbicsResponseBodyReturnCode)
+	return me.ReturnCode
+}
+
 func (me *EbicsResponseBody) SetTimestampBankParameter(value *EbicsResponseBodyTimestampBankParameter) {
 	me.TimestampBankParameter = value
+}
+
+func (me *EbicsResponseBody) AddTimestampBankParameter() *EbicsResponseBodyTimestampBankParameter {
+	me.TimestampBankParameter = new(EbicsResponseBodyTimestampBankParameter)
+	return me.TimestampBankParameter
 }

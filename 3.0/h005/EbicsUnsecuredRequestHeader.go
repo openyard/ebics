@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 // ComplexType
@@ -16,6 +16,16 @@ func (me *EbicsUnsecuredRequestHeader) SetStatic(value *UnsecuredRequestStaticHe
 	me.Static = value
 }
 
+func (me *EbicsUnsecuredRequestHeader) AddStatic() *UnsecuredRequestStaticHeaderType {
+	me.Static = new(UnsecuredRequestStaticHeaderType)
+	return me.Static
+}
+
 func (me *EbicsUnsecuredRequestHeader) SetMutable(value *EmptyMutableHeaderType) {
 	me.Mutable = value
+}
+
+func (me *EbicsUnsecuredRequestHeader) AddMutable() *EmptyMutableHeaderType {
+	me.Mutable = new(EmptyMutableHeaderType)
+	return me.Mutable
 }

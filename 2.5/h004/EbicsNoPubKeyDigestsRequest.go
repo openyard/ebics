@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 // ComplexType
@@ -17,8 +17,18 @@ func (me *EbicsNoPubKeyDigestsRequest) SetHeader(value *EbicsNoPubKeyDigestsRequ
 	me.Header = value
 }
 
+func (me *EbicsNoPubKeyDigestsRequest) AddHeader() *EbicsNoPubKeyDigestsRequestHeader {
+	me.Header = new(EbicsNoPubKeyDigestsRequestHeader)
+	return me.Header
+}
+
 func (me *EbicsNoPubKeyDigestsRequest) SetBody(value *EbicsNoPubKeyDigestsRequestBody) {
 	me.Body = value
+}
+
+func (me *EbicsNoPubKeyDigestsRequest) AddBody() *EbicsNoPubKeyDigestsRequestBody {
+	me.Body = new(EbicsNoPubKeyDigestsRequestBody)
+	return me.Body
 }
 
 func (me *EbicsNoPubKeyDigestsRequest) SetAuthSignature(value *AuthSignature) {

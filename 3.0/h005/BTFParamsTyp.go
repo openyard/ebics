@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 // ComplexType
@@ -22,12 +22,27 @@ func (me *BTFParamsTyp) SetService(value *RestrictedServiceType) {
 	me.Service = value
 }
 
+func (me *BTFParamsTyp) AddService() *RestrictedServiceType {
+	me.Service = new(RestrictedServiceType)
+	return me.Service
+}
+
 func (me *BTFParamsTyp) SetSignatureFlag(value *SignatureFlagType) {
 	me.SignatureFlag = value
 }
 
+func (me *BTFParamsTyp) AddSignatureFlag() *SignatureFlagType {
+	me.SignatureFlag = new(SignatureFlagType)
+	return me.SignatureFlag
+}
+
 func (me *BTFParamsTyp) SetDateRange(value *DateRangeType) {
 	me.DateRange = value
+}
+
+func (me *BTFParamsTyp) AddDateRange() *DateRangeType {
+	me.DateRange = new(DateRangeType)
+	return me.DateRange
 }
 
 func (me *BTFParamsTyp) SetParameter(value *Parameter) {

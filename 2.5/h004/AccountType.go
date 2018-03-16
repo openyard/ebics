@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h004
 
 // ComplexType
@@ -28,18 +28,43 @@ func (me *AccountType) SetAccountHolder(value *AccountHolderType) {
 	me.AccountHolder = value
 }
 
+func (me *AccountType) AddAccountHolder() *AccountHolderType {
+	me.AccountHolder = new(AccountHolderType)
+	return me.AccountHolder
+}
+
 func (me *AccountType) SetAccountNumber(value *AccountTypeAccountNumber) {
 	me.AccountNumber = value
+}
+
+func (me *AccountType) AddAccountNumber() *AccountTypeAccountNumber {
+	me.AccountNumber = new(AccountTypeAccountNumber)
+	return me.AccountNumber
 }
 
 func (me *AccountType) SetNationalAccountNumber(value *AccountTypeNationalAccountNumber) {
 	me.NationalAccountNumber = value
 }
 
+func (me *AccountType) AddNationalAccountNumber() *AccountTypeNationalAccountNumber {
+	me.NationalAccountNumber = new(AccountTypeNationalAccountNumber)
+	return me.NationalAccountNumber
+}
+
 func (me *AccountType) SetBankCode(value *AccountTypeBankCode) {
 	me.BankCode = value
 }
 
+func (me *AccountType) AddBankCode() *AccountTypeBankCode {
+	me.BankCode = new(AccountTypeBankCode)
+	return me.BankCode
+}
+
 func (me *AccountType) SetNationalBankCode(value *AccountTypeNationalBankCode) {
 	me.NationalBankCode = value
+}
+
+func (me *AccountType) AddNationalBankCode() *AccountTypeNationalBankCode {
+	me.NationalBankCode = new(AccountTypeNationalBankCode)
+	return me.NationalBankCode
 }

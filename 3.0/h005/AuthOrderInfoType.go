@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
@@ -21,14 +21,34 @@ func (me *AuthOrderInfoType) SetAdminOrderType(value *OrderTBaseType) {
 	me.AdminOrderType = value
 }
 
+func (me *AuthOrderInfoType) AddAdminOrderType() *OrderTBaseType {
+	me.AdminOrderType = new(OrderTBaseType)
+	return me.AdminOrderType
+}
+
 func (me *AuthOrderInfoType) SetService(value *RestrictedServiceType) {
 	me.Service = value
+}
+
+func (me *AuthOrderInfoType) AddService() *RestrictedServiceType {
+	me.Service = new(RestrictedServiceType)
+	return me.Service
 }
 
 func (me *AuthOrderInfoType) SetDescription(value *OrderDescriptionType) {
 	me.Description = value
 }
 
+func (me *AuthOrderInfoType) AddDescription() *OrderDescriptionType {
+	me.Description = new(OrderDescriptionType)
+	return me.Description
+}
+
 func (me *AuthOrderInfoType) SetNumSigRequired(value *w3c.NonNegativeInteger) {
 	me.NumSigRequired = value
+}
+
+func (me *AuthOrderInfoType) AddNumSigRequired() *w3c.NonNegativeInteger {
+	me.NumSigRequired = new(w3c.NonNegativeInteger)
+	return me.NumSigRequired
 }

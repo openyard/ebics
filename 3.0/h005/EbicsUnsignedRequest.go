@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 // ComplexType
@@ -16,6 +16,16 @@ func (me *EbicsUnsignedRequest) SetHeader(value *EbicsUnsignedRequestHeader) {
 	me.Header = value
 }
 
+func (me *EbicsUnsignedRequest) AddHeader() *EbicsUnsignedRequestHeader {
+	me.Header = new(EbicsUnsignedRequestHeader)
+	return me.Header
+}
+
 func (me *EbicsUnsignedRequest) SetBody(value *EbicsUnsignedRequestBody) {
 	me.Body = value
+}
+
+func (me *EbicsUnsignedRequest) AddBody() *EbicsUnsignedRequestBody {
+	me.Body = new(EbicsUnsignedRequestBody)
+	return me.Body
 }

@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
@@ -23,22 +23,52 @@ func (me *AddressInfoType) SetName(value *NameType) {
 	me.Name = value
 }
 
+func (me *AddressInfoType) AddName() *NameType {
+	me.Name = new(NameType)
+	return me.Name
+}
+
 func (me *AddressInfoType) SetStreet(value *NameType) {
 	me.Street = value
+}
+
+func (me *AddressInfoType) AddStreet() *NameType {
+	me.Street = new(NameType)
+	return me.Street
 }
 
 func (me *AddressInfoType) SetPostCode(value *w3c.Token) {
 	me.PostCode = value
 }
 
+func (me *AddressInfoType) AddPostCode() *w3c.Token {
+	me.PostCode = new(w3c.Token)
+	return me.PostCode
+}
+
 func (me *AddressInfoType) SetCity(value *NameType) {
 	me.City = value
+}
+
+func (me *AddressInfoType) AddCity() *NameType {
+	me.City = new(NameType)
+	return me.City
 }
 
 func (me *AddressInfoType) SetRegion(value *NameType) {
 	me.Region = value
 }
 
+func (me *AddressInfoType) AddRegion() *NameType {
+	me.Region = new(NameType)
+	return me.Region
+}
+
 func (me *AddressInfoType) SetCountry(value *NameType) {
 	me.Country = value
+}
+
+func (me *AddressInfoType) AddCountry() *NameType {
+	me.Country = new(NameType)
+	return me.Country
 }

@@ -1,4 +1,4 @@
-// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
+// Generated with goxc v0.1.12 - rev a028cbdc83780b377b6e304cf9d98aa764b4028c
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
@@ -22,18 +22,43 @@ func (me *DataTransferRequestType) SetDataEncryptionInfo(value *DataTransferRequ
 	me.DataEncryptionInfo = value
 }
 
+func (me *DataTransferRequestType) AddDataEncryptionInfo() *DataTransferRequestTypeDataEncryptionInfo {
+	me.DataEncryptionInfo = new(DataTransferRequestTypeDataEncryptionInfo)
+	return me.DataEncryptionInfo
+}
+
 func (me *DataTransferRequestType) SetSignatureData(value *DataTransferRequestTypeSignatureData) {
 	me.SignatureData = value
+}
+
+func (me *DataTransferRequestType) AddSignatureData() *DataTransferRequestTypeSignatureData {
+	me.SignatureData = new(DataTransferRequestTypeSignatureData)
+	return me.SignatureData
 }
 
 func (me *DataTransferRequestType) SetDataDigest(value *DataDigestType) {
 	me.DataDigest = value
 }
 
+func (me *DataTransferRequestType) AddDataDigest() *DataDigestType {
+	me.DataDigest = new(DataDigestType)
+	return me.DataDigest
+}
+
 func (me *DataTransferRequestType) SetAdditionalOrderInfo(value *String255Type) {
 	me.AdditionalOrderInfo = value
 }
 
+func (me *DataTransferRequestType) AddAdditionalOrderInfo() *String255Type {
+	me.AdditionalOrderInfo = new(String255Type)
+	return me.AdditionalOrderInfo
+}
+
 func (me *DataTransferRequestType) SetOrderData(value *DataTransferRequestTypeOrderData) {
 	me.OrderData = value
+}
+
+func (me *DataTransferRequestType) AddOrderData() *DataTransferRequestTypeOrderData {
+	me.OrderData = new(DataTransferRequestTypeOrderData)
+	return me.OrderData
 }
