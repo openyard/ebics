@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
 
-// complex type
+// ComplexType
 type HVUOrderDetailsType struct {
 	Service             *RestrictedServiceType `xml:"Service"`
 	OrderID             *OrderIDType           `xml:"OrderID"`
@@ -14,4 +14,36 @@ type HVUOrderDetailsType struct {
 	AdditionalOrderInfo *String255Type         `xml:"AdditionalOrderInfo,omitempty"`
 
 	Any []*w3c.Any
+}
+
+func NewHVUOrderDetailsType() *HVUOrderDetailsType {
+	return new(HVUOrderDetailsType)
+}
+
+func (me *HVUOrderDetailsType) SetService(value *RestrictedServiceType) {
+	me.Service = value
+}
+
+func (me *HVUOrderDetailsType) SetOrderID(value *OrderIDType) {
+	me.OrderID = value
+}
+
+func (me *HVUOrderDetailsType) SetOrderDataSize(value *w3c.PositiveInteger) {
+	me.OrderDataSize = value
+}
+
+func (me *HVUOrderDetailsType) SetSigningInfo(value *HVUSigningInfoType) {
+	me.SigningInfo = value
+}
+
+func (me *HVUOrderDetailsType) AddSignerInfo(value *SignerInfoType) {
+	me.SignerInfo = append(me.SignerInfo, value)
+}
+
+func (me *HVUOrderDetailsType) SetOriginatorInfo(value *HVUOriginatorInfoType) {
+	me.OriginatorInfo = value
+}
+
+func (me *HVUOrderDetailsType) SetAdditionalOrderInfo(value *String255Type) {
+	me.AdditionalOrderInfo = value
 }

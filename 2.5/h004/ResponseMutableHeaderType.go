@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
-// complex type
+// ComplexType
 type ResponseMutableHeaderType struct {
 	TransactionPhase *TransactionPhaseType                   `xml:"TransactionPhase"`
 	SegmentNumber    *ResponseMutableHeaderTypeSegmentNumber `xml:"SegmentNumber,omitempty"`
@@ -12,4 +12,28 @@ type ResponseMutableHeaderType struct {
 	ReportText       *ReportTextType                         `xml:"ReportText"`
 
 	Any []*w3c.Any
+}
+
+func NewResponseMutableHeaderType() *ResponseMutableHeaderType {
+	return new(ResponseMutableHeaderType)
+}
+
+func (me *ResponseMutableHeaderType) SetTransactionPhase(value *TransactionPhaseType) {
+	me.TransactionPhase = value
+}
+
+func (me *ResponseMutableHeaderType) SetSegmentNumber(value *ResponseMutableHeaderTypeSegmentNumber) {
+	me.SegmentNumber = value
+}
+
+func (me *ResponseMutableHeaderType) SetOrderID(value *OrderIDType) {
+	me.OrderID = value
+}
+
+func (me *ResponseMutableHeaderType) SetReturnCode(value *ReturnCodeType) {
+	me.ReturnCode = value
+}
+
+func (me *ResponseMutableHeaderType) SetReportText(value *ReportTextType) {
+	me.ReportText = value
 }

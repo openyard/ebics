@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h005
 
 import w3c "github.com/openyard/ebics/3.0/w3c"
 
-// complex type
+// ComplexType
 type HVZOrderDetailsType struct {
 	Service               *RestrictedServiceType `xml:"Service"`
 	OrderID               *OrderIDType           `xml:"OrderID"`
@@ -17,4 +17,48 @@ type HVZOrderDetailsType struct {
 	AdditionalOrderInfo   *String255Type         `xml:"AdditionalOrderInfo,omitempty"`
 
 	Any []*w3c.Any
+}
+
+func NewHVZOrderDetailsType() *HVZOrderDetailsType {
+	return new(HVZOrderDetailsType)
+}
+
+func (me *HVZOrderDetailsType) SetService(value *RestrictedServiceType) {
+	me.Service = value
+}
+
+func (me *HVZOrderDetailsType) SetOrderID(value *OrderIDType) {
+	me.OrderID = value
+}
+
+func (me *HVZOrderDetailsType) SetDataDigest(value *DataDigestType) {
+	me.DataDigest = value
+}
+
+func (me *HVZOrderDetailsType) SetOrderDataAvailable(value *w3c.Boolean) {
+	me.OrderDataAvailable = value
+}
+
+func (me *HVZOrderDetailsType) SetOrderDataSize(value *w3c.PositiveInteger) {
+	me.OrderDataSize = value
+}
+
+func (me *HVZOrderDetailsType) SetOrderDetailsAvailable(value *w3c.Boolean) {
+	me.OrderDetailsAvailable = value
+}
+
+func (me *HVZOrderDetailsType) SetSigningInfo(value *HVUSigningInfoType) {
+	me.SigningInfo = value
+}
+
+func (me *HVZOrderDetailsType) AddSignerInfo(value *SignerInfoType) {
+	me.SignerInfo = append(me.SignerInfo, value)
+}
+
+func (me *HVZOrderDetailsType) SetOriginatorInfo(value *HVUOriginatorInfoType) {
+	me.OriginatorInfo = value
+}
+
+func (me *HVZOrderDetailsType) SetAdditionalOrderInfo(value *String255Type) {
+	me.AdditionalOrderInfo = value
 }

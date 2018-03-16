@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package xmldsig
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
-// attribute type
+// Attribute
 type Algorithm struct {
 	Value *w3c.AnyURI `xml:"Algorithm,attr"`
 }

@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
-// complex type
+// ComplexType
 type HPDProtocolParamsType struct {
 	Version               *HPDVersionType                             `xml:"Version"`
 	Recovery              *HPDProtocolParamsTypeRecovery              `xml:"Recovery,omitempty"`
@@ -13,4 +13,32 @@ type HPDProtocolParamsType struct {
 	DownloadableOrderData *HPDProtocolParamsTypeDownloadableOrderData `xml:"DownloadableOrderData,omitempty"`
 
 	Any []*w3c.Any
+}
+
+func NewHPDProtocolParamsType() *HPDProtocolParamsType {
+	return new(HPDProtocolParamsType)
+}
+
+func (me *HPDProtocolParamsType) SetVersion(value *HPDVersionType) {
+	me.Version = value
+}
+
+func (me *HPDProtocolParamsType) SetRecovery(value *HPDProtocolParamsTypeRecovery) {
+	me.Recovery = value
+}
+
+func (me *HPDProtocolParamsType) SetPreValidation(value *HPDProtocolParamsTypePreValidation) {
+	me.PreValidation = value
+}
+
+func (me *HPDProtocolParamsType) SetX509Data(value *HPDProtocolParamsTypeX509Data) {
+	me.X509Data = value
+}
+
+func (me *HPDProtocolParamsType) SetClientDataDownload(value *HPDProtocolParamsTypeClientDataDownload) {
+	me.ClientDataDownload = value
+}
+
+func (me *HPDProtocolParamsType) SetDownloadableOrderData(value *HPDProtocolParamsTypeDownloadableOrderData) {
+	me.DownloadableOrderData = value
 }

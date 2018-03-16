@@ -1,12 +1,24 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
-// complex type
+// ComplexType
 type EbicsKeyManagementResponseBodyDataTransfer struct {
 	DataEncryptionInfo *EbicsKeyManagementResponseBodyDataTransferDataEncryptionInfo `xml:"DataEncryptionInfo"`
 	OrderData          *EbicsKeyManagementResponseBodyDataTransferOrderData          `xml:"OrderData"`
 
 	Any []*w3c.Any
+}
+
+func NewEbicsKeyManagementResponseBodyDataTransfer() *EbicsKeyManagementResponseBodyDataTransfer {
+	return new(EbicsKeyManagementResponseBodyDataTransfer)
+}
+
+func (me *EbicsKeyManagementResponseBodyDataTransfer) SetDataEncryptionInfo(value *EbicsKeyManagementResponseBodyDataTransferDataEncryptionInfo) {
+	me.DataEncryptionInfo = value
+}
+
+func (me *EbicsKeyManagementResponseBodyDataTransfer) SetOrderData(value *EbicsKeyManagementResponseBodyDataTransferOrderData) {
+	me.OrderData = value
 }

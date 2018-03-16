@@ -1,9 +1,9 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package h004
 
 import w3c "github.com/openyard/ebics/2.5/w3c"
 
-// complex type
+// ComplexType
 type HVTOrderInfoType struct {
 	OrderFormat   *OrderFormatType               `xml:"OrderFormat,omitempty"`
 	AccountInfo   *HVTAccountInfoType            `xml:"AccountInfo"`
@@ -12,4 +12,28 @@ type HVTOrderInfoType struct {
 	Description   *HVTOrderInfoTypeDescription   `xml:"Description,omitempty"`
 
 	Any []*w3c.Any
+}
+
+func NewHVTOrderInfoType() *HVTOrderInfoType {
+	return new(HVTOrderInfoType)
+}
+
+func (me *HVTOrderInfoType) SetOrderFormat(value *OrderFormatType) {
+	me.OrderFormat = value
+}
+
+func (me *HVTOrderInfoType) SetAccountInfo(value *HVTAccountInfoType) {
+	me.AccountInfo = value
+}
+
+func (me *HVTOrderInfoType) SetExecutionDate(value *HVTOrderInfoTypeExecutionDate) {
+	me.ExecutionDate = value
+}
+
+func (me *HVTOrderInfoType) SetAmount(value *HVTOrderInfoTypeAmount) {
+	me.Amount = value
+}
+
+func (me *HVTOrderInfoType) SetDescription(value *HVTOrderInfoTypeDescription) {
+	me.Description = value
 }

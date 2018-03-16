@@ -1,9 +1,25 @@
-// Generated with goxc vgoxc-0.1.9 - rev 260439f4ef82f3f152002242cdec0bb97e6118c3
+// Generated with goxc vgoxc-0.1.10 - rev e8baacfe36e4067177cedfe1884d18a3ba2f1d75
 package xmldsig
 
-// complex type
+// ComplexType
 type DSAKeyValueType struct {
 	G *CryptoBinary `xml:"G,omitempty"`
 	Y *CryptoBinary `xml:"Y"`
 	J *CryptoBinary `xml:"J,omitempty"`
+}
+
+func NewDSAKeyValueType() *DSAKeyValueType {
+	return new(DSAKeyValueType)
+}
+
+func (me *DSAKeyValueType) SetG(value *CryptoBinary) {
+	me.G = value
+}
+
+func (me *DSAKeyValueType) SetY(value *CryptoBinary) {
+	me.Y = value
+}
+
+func (me *DSAKeyValueType) SetJ(value *CryptoBinary) {
+	me.J = value
 }
